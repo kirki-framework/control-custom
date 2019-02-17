@@ -12,12 +12,13 @@
  * @since       1.0
  */
 
+namespace Kirki\Control;
+use Kirki\Control\Base;
+
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
-use Kirki\Control\Base;
 
 /**
  * The "custom" control allows you to add any raw HTML.
