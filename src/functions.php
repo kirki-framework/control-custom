@@ -14,3 +14,4 @@ add_action(
         class_alias( 'Kirki\Control\Custom', 'Kirki_Control_Custom' );
     }
 );
+class_alias( 'Kirki\Field\Custom', 'Kirki_Field_Custom' );
