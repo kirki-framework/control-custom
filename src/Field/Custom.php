@@ -26,7 +26,7 @@ class Custom extends Field {
 	 * @since 0.1
 	 * @var string
 	 */
-	protected $control_class = '\Kirki\Control\Checkbox';
+	protected $control_class = '\Kirki\Control\Custom';
 
 	/**
 	 * Whether we should register the control class for JS-templating or not.
