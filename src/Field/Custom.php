@@ -48,6 +48,7 @@ class Custom extends Field {
 	 */
 	public function filter_setting_args( $args, $wp_customize ) {
 		if ( $args['settings'] === $this->args['settings'] ) {
+			$args = parent::filter_setting_args( $args, $wp_customize );
 			if ( ! isset( $args['sanitize_callback'] ) || ! $args['sanitize_callback'] ) {
 				$args['sanitize_callback'] = '__return_null';
 			}
@@ -66,7 +67,7 @@ class Custom extends Field {
 	 */
 	public function filter_control_args( $args, $wp_customize ) {
 		if ( $args['settings'] === $this->args['settings'] ) {
-			$args = parent::filter_control_args( $args, $wp_customize );
+			$args         = parent::filter_control_args( $args, $wp_customize );
 			$args['type'] = 'kirki-custom';
 		}
 		return $args;
